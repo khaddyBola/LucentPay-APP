@@ -1,0 +1,200 @@
+.create {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem 0.5rem;
+  background: var(--color-primary);
+}
+
+.create-section {
+  width: 100%;
+  max-width: 600px;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem 3rem;
+  background-color: white;
+  color: var(--color-primary);
+}
+
+.form-logo {
+  width: 8rem;
+}
+
+.create-section h2 {
+  font-size: 1.8rem;
+}
+
+.create-section h4,
+.create-section img,
+.create-section h2,
+.your-details {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.create-section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  padding-bottom: 1rem;
+  padding-top: 2.5rem;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.create-section a,
+.create-section a:visited {
+  color: var(--color-secondary);
+}
+
+.create-section input[type="text"],
+.create-section input[type="password"],
+.create-section input[type="email"],
+.create-section button,
+.create-section textarea {
+  font-size: 15px;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  border: 2px solid white;
+  background: #ebecf1;
+  font-family: inherit;
+  height: 3rem;
+  width: 100%;
+}
+
+.phone,
+.country {
+  height: 3.3rem;
+  border-radius: 0.5rem;
+  border: 2px solid white;
+  background: #ebecf1;
+  margin-top: 1rem;
+}
+
+.phone:hover,
+.country:hover,
+.create-section input[type="text"]:hover,
+.create-section input[type="password"]:hover,
+.create-section input[type="email"]:hover,
+.create-section textarea:hover {
+  border: 2px solid var(--color-secondary);
+}
+
+.create-section select:hover {
+  background: white;
+}
+
+.phoneInput,
+.create-section select {
+  border: 2px solid #ebecf1;
+  font-family: inherit;
+  background: #ebecf1;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+}
+
+.phoneInput:hover {
+  border: 2px solid #ebecf1;
+}
+
+#country,
+#region-dropdown,
+#phone,
+#phoneInput {
+  width: 50%;
+}
+
+input:hover {
+  border: 2px solid var(--color-secondary);
+}
+
+.create-section label,
+.create-section button,
+.login-section label,
+.login-section button {
+  margin-top: 1rem;
+}
+
+.create-section button {
+  padding: 1rem;
+  background: var(--color-secondary);
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border: none;
+  transition: var(--transition);
+}
+
+.create-section button:hover,
+.login-section button:hover {
+  background: #0da29f;
+  border: none;
+}
+
+.have-account {
+  color: var(--color-primary);
+}
+
+.instructions {
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  background: var(--color-secondary);
+  padding: 0.25rem;
+  position: relative;
+  bottom: -10px;
+  color: white;
+}
+
+.instructions > svg {
+  margin-right: 0.25rem;
+  color: red;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.hide {
+  display: none;
+}
+
+.valid {
+  color: limegreen;
+  margin-left: 0.25rem;
+}
+
+.invalid {
+  color: red;
+  margin-left: 0.25rem;
+}
+
+.errmsg {
+  background-color: lightpink;
+  color: firebrick;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 10;
+}
+
+.line {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+/* MEDIA QUERRIES (small screen) */
+@media screen and (max-width: 600px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}

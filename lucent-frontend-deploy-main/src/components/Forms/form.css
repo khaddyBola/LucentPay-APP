@@ -1,0 +1,70 @@
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.field label {
+  display: block;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  border: 2px solid #f6f5f5;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  font-family: inherit;
+}
+
+.field textarea {
+  display: block;
+  width: 100%;
+  resize: none;
+}
+
+.field span,
+form p {
+  color: red;
+}
+
+.submitBtn {
+  font-size: 1rem;
+  cursor: pointer;
+  background: var(--color-primary);
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+  transition: var(--transition);
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.submitBtn:hover {
+  color: var(--color-primary);
+  background: var(--color-secondary);
+}
+
+.success {
+  padding-top: 2rem;
+  color: #046504;
+}
+
+/* MEDIA QUERRY (small screen) */
+@media screen and (max-width: 600px) {
+  .form-container {
+    grid-template-columns: 1fr;
+  }
+}

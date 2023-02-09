@@ -1,0 +1,26 @@
+{
+  "name": "server-lucent-pay",
+  "version": "1.0.0",
+  "description": "LucentPay backend project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "keywords": [],
+  "author": "Adeshola & Khadijah",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "date-fns": "^2.29.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.7.0",
+    "nodemon": "^2.0.20",
+    "uuid": "^9.0.0",
+    "validator": "^13.7.0"
+  }
+}

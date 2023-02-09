@@ -1,0 +1,63 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem 0.5rem;
+  background: var(--color-primary);
+}
+
+.login-section {
+  width: 100%;
+  max-width: 420px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem 3rem;
+  background: white;
+  color: var(--color-primary);
+}
+
+.login-section h2 {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+}
+
+.login-section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  padding-bottom: 1rem;
+}
+
+.login-section a,
+.login-section a:visited {
+  color: var(--color-secondary);
+}
+
+.login-section input[type="text"],
+.login-section input[type="password"],
+.login-section button,
+.login-section textarea {
+  font-size: 15px;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  border: 2px solid white;
+  background: #ebecf1;
+  font-family: inherit;
+  height: 3rem;
+  width: 100%;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.login-section button {
+  background: var(--color-secondary);
+}

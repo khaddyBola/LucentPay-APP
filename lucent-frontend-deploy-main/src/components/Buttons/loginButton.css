@@ -1,0 +1,57 @@
+.login-button {
+    margin-right: 2rem;
+    margin-left: 5rem;
+}
+
+.loginBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-family: inherit;
+    font-size: inherit;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.loginBtn:hover {
+    color: var(--color-secondary);
+}
+
+
+/* MEDIA QUERIES (For small and medium screen) */
+
+@media screen and (max-width: 1024px) {
+    .login-button {
+        margin-right: 2rem;
+        margin-left: 0;
+    }
+
+    .loginBtn {
+        font-family: inherit;
+        font-size: inherit;
+        border: none;
+        background: var(--color-secondary);
+        color: white;
+        width: fit-content;
+        padding: .4rem .5rem;
+        transition: var(--transition);
+        -webkit-transition: var(--transition);
+        -moz-transition: var(--transition);
+        -ms-transition: var(--transition);
+        -o-transition: var(--transition);
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px;
+}
+    
+.loginBtn:hover {
+    color: var(--color-secondary);
+    background: white;
+}
+}

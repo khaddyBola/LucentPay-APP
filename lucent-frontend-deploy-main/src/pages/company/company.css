@@ -1,0 +1,214 @@
+
+/* COMPANY */
+.company-head, .company-team-head {
+    margin-top: 5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-container h2, .company-team-container h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+}
+
+.company-team span, .company-team-container span {
+    border-bottom: 3px dashed var(--color-secondary);
+}
+
+.company-container p, .company-team-container p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.company-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-image-container img {
+    width: 90%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.company-wrapper {
+    display: grid;
+    column-gap: 8rem;
+    margin-top: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.company-card img {
+    margin-top: 5rem;
+    width: 30%;
+    place-items: center;
+}
+
+.company-card h4 {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    color: var(--color-primary);
+}
+
+.company-card small {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* COMPANY TEAM */
+.company-team {
+    padding: 10rem 0;
+}
+
+.company-team-container p {
+    padding: 0 15rem;
+}
+
+.company-team-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem;
+    margin-top: 10rem;
+}
+
+.company-team-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    padding: 2rem;
+    background: #f0f0fa;
+    text-align: center;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.company-team-card-image-conatiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    overflow: hidden;
+    top: -4rem;
+    left: calc(50% - 4rem);
+    margin-bottom: 2rem;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.company-team-card h5 {
+    padding-top: 3rem;
+    color: var(--color-primary);
+    text-align: center;
+}
+
+.company-team-card small {
+    font-size: 1rem;
+    margin-top: .5rem;
+    color: #666363;
+    text-align: center;
+}
+
+.company-team-socials {
+   margin-top: 2rem;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: .5rem;
+}
+
+.company-team-socials a {
+    display: flex;
+    align-items: center;
+    background: var(--color-secondary);
+    color: white;
+    padding: 1rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.company-team-socials a:hover {
+    background: var(--color-primary);
+}
+
+/* MEDIA QUERRIES (medium screen) */
+@media screen and (max-width: 1024px) {
+    .company-team-container p {
+        padding: 0 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .company-team-wrapper {
+        grid-template-columns: 1fr;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .company-team-card {
+        margin-top: 5rem;
+    }
+
+    .company-container h2 {
+        white-space: nowrap;
+    }
+
+    
+
+}
+
+/* MEDIA QUERRIES (small screen) */
+@media screen and (max-width: 600px) {
+    .company-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .company-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .company-team-card p, 
+    .company-container p{
+        margin-inline: auto;
+    }
+
+    .company-team-container p {
+        padding: 0;
+        margin-inline: auto;
+    }
+
+    .company-team-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

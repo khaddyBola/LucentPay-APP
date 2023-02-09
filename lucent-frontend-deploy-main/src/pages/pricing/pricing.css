@@ -1,0 +1,165 @@
+.pricing-container {
+    padding: 8rem 0;
+}
+
+.pricing-head {
+    margin-top: 3.4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing-head, 
+.pricing-container h2, 
+.pricing-container p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.pricing-container h2 {
+    font-size: 2rem;
+    color: var(--color-primary);
+    line-height: 1.5;
+    gap: 0.8rem;
+}
+
+.pricing-container p {
+    font-weight: 200;
+    font-size: 1rem;
+    margin-top: 2rem;
+    padding: 0 10rem;
+}
+
+.pricing-container .span {
+    margin-left: .5rem;
+    border-bottom: 3px dashed var(--color-secondary);
+}
+
+.pricing-wrapper {
+    margin-top: 5rem;
+}
+
+.pricing-card {
+    border: 2px solid #f0f0fa;
+    margin: 0 auto;
+    width: 30%;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.pricing-card:hover {
+    border: 2px solid var(--color-secondary);
+}
+
+.pricing-icon {
+    font-size: 6rem;
+    text-decoration: none;
+    color: var(--color-secondary);
+}
+
+.pricing-card h4 {
+    color: var(--color-primary);
+}
+
+
+.pricing-card h5 {
+    margin: 1rem 0;
+    white-space: nowrap;
+}
+
+.pricing-card button {
+    margin-top: 1rem;
+    font-size: 1rem;
+    border: 2px solid #f0f0fa;
+    background-color: var(--color-secondary);
+    color: #fff;
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+.pricing-card button:hover {
+    background: var(--color-primary);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.pricing-card summary {
+    color: var(--color-secondary); 
+    font-size: 1.4rem;
+    gap: 0.5rem;
+    white-space: nowrap;
+}
+
+.pricing-card small {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+.pricing-card span {
+    color: var(--color-primary);
+    font-size: 2rem;
+    font-weight: 800;
+    white-space: nowrap;
+    justify-items: center;
+}
+
+.pricing-card small {
+    color: #000000;
+    margin-top: 1rem;
+    display: block;
+}
+
+.pricing-card svg {
+    color: var(--color-secondary);
+    margin-right: 1rem;
+}
+
+
+/* MEDIA QUERIES (for medium screen) */
+@media screen and (max-width: 1024px) {
+    .pricing-card {
+        width: 50%;
+        padding: 3rem;
+    }
+
+    .pricing-container h2 {
+        white-space: nowrap;
+        text-align: left;
+    }
+}
+
+/* MEDIA QUERIES (for small screen) */
+@media screen and (max-width: 1024px) {
+    .pricing-container h2 {
+        font-size: 1.7rem;
+    }
+
+    .pricing-container p {
+        padding: 0;
+        margin-inline: auto;
+    }
+
+    .pricing-card {
+        width: 100%;
+    }
+}

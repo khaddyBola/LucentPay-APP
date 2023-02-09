@@ -1,0 +1,77 @@
+
+.contacts-container {
+    padding: 10rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+}
+
+.contacts-container-left h2 {
+    color: var(--color-primary);
+    font-size: 2.1rem;
+}
+
+.contacts-container-left p {
+    margin-top: 1rem;
+    margin-inline: auto;
+}
+
+.contacts-container-left svg {
+    color: var(--color-secondary);
+    font-size: 2.5rem;
+    margin: 1rem;
+    display: flex;
+}
+
+.contacts-container-left span {
+    border-bottom: 3px dashed var(--color-secondary);
+}
+
+.contacts-container-inner small, .contacts-container-inner address {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.contacts-container-inner span {
+    border: none;
+    color: var(--color-secondary);
+    margin: 1rem;
+}
+
+.contacts-container-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.contacts-container-inner a {
+    color: black;
+}
+
+form input, form textarea {
+    border: 1px solid black;
+}
+
+.contacts-map-container {
+    margin-bottom: 10rem;
+}
+
+/* MEDIA QUERRY (medium screen) */
+@media screen and (max-width: 1024px) {
+    .contacts-container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .contacts-container-left {
+        padding-bottom: 5rem;
+    }
+
+}
+
+
+/* MEDIA QUERRY (small screen) */
+@media screen and (max-width: 600px) {
+
+}

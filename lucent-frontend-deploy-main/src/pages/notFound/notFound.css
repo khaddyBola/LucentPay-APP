@@ -1,0 +1,29 @@
+.not-found {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    background: var(--color-primary);
+    color: white;
+    height: 80vh;
+}
+
+.not-found-container {
+    padding: 0 20rem;
+    text-align: center;
+}
+
+.not-found-container h2 {
+    font-size: 5rem;
+}
+
+.not-found-container h5 {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.not-found-container p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+}

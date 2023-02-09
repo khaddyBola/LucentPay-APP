@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --color-primary: #03032a;
+  --color-secondary: #06b1bd;
+  --color-primary-light: #5a5ac6;
+  --color-partial: #146f14;
+
+  --container-width-lg: 88%;
+  --container-width-md: 92%;
+
+  --transition: all 1000ms ease;
+}
+
+/* GENERAL STYLINGS */
+body {
+  font-family: "Roboto Serif", serif;
+  background-color: white;
+  overflow-x: hidden;
+  line-height: 1.7;
+}
+
+.container {
+  width: var(--container-width-lg);
+  max-width: 1920px;
+  margin-inline: auto;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  background: var(--color-secondary);
+  width: fit-content;
+  padding: 0.8rem 2rem;
+  color: white;
+  transition: var(--transition);
+  border-radius: 1.6rem;
+  -webkit-border-radius: 1.6rem;
+  -moz-border-radius: 1.6rem;
+  -ms-border-radius: 1.6rem;
+  -o-border-radius: 1.6rem;
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.btn:hover {
+  background: white;
+  color: var(--color-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+  color: var(--color-gray-100);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+a {
+  color: white;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* PAGES HEADER */
+.pages-header {
+  padding-top: 5rem;
+  background: var(--color-primary);
+  height: 75vh;
+  color: white;
+}
+
+.pages-header-container {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sm-div1 h2 {
+  margin-top: 2rem;
+  font-size: 2.5rem;
+}
+
+.sm-div2 {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* MEDIA QUERRY (medium screen) */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* MEDIA QUERRY (small screen) */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+
+  .sm-div2 {
+    margin-left: 5rem;
+  }
+}
